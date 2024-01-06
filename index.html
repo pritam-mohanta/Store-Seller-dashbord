@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>General Store Seller Dashboard</title>
+  </head>
+  <body style="margin: 0">
+    <form onsubmit="handleFormSubmit(event)">
+      <label for="name">ItemName</label>
+      <input type="text" name="name" id="name" />
+      <label for="desc">Description</label>
+      <input type="text" name="desc" id="desc" />
+      <label for="price">Price</label>
+      <input type="number" name="price" id="price" />
+      <label for="quan">Quantity</label>
+      <input type="number" name="quan" id="quan" />
+      <button type="submit">Add Item</button>
+    </form>
+    <!-- Add Unordered List Element Here -->
+    <ul id="listOfItems"></ul>
+
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.4/axios.min.js"></script>
+  <script src="index.js"></script>
+</html>
